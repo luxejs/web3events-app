@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css" />
-    <title>WebZero.events</title>
+    <title>WebZero.events - template/proposal</title>
 </head>
 <body>
-    <button class="btn btn-primary">Button</button>
-    <div class="hero min-h-screen bg-base-200">
-        <div class="hero-content flex-col lg:flex-row">
-          <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" class="max-w-sm rounded-lg shadow-2xl" />
-          <div>
-            <h1 class="text-5xl font-bold">Box Office News!</h1>
-            <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-            <button class="btn btn-primary">Get Started</button>
-          </div>
-        </div>
-      </div>
+    <%- include('partials/navbar.ejs') %>
+
+
+<div class="hero min-h-screen" style="background-image: url(https://static.wixstatic.com/media/b432cc_b21bed6e720f42dcbffbb38d42ae6eb8~mv2.jpg/v1/fill/w_1526,h_1028,fp_0.50_0.50,q_85,enc_auto/about%20us%20banner_smol.jpg);">
+
+  <div class="hero-overlay bg-opacity-60"></div>
+  <div class="flex-col hero-content text-center text-neutral-content">
+    <%- include('partials/card.ejs') %>
+    <%- include('partials/timer.ejs') %>
+
+    <%- include('partials/card2.ejs') %>
+    <%- include('partials/timer.ejs') %>
+    <%- include('partials/card3.ejs') %>
+    <%- include('partials/timer.ejs') %>
+  </div>
+
+
+</div>
 </body>
 </html>
